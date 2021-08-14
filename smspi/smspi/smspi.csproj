@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{171BCE60-9B9B-46A6-8B0B-BEFBFE898CBF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>smspi</RootNamespace>
+    <AssemblyName>smspi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="course.Designer.cs">
+      <DependentUpon>course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="coursereport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coursereport.Designer.cs">
+      <DependentUpon>coursereport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enquirybook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enquirybook.Designer.cs">
+      <DependentUpon>enquirybook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enquiryreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enquiryreport.Designer.cs">
+      <DependentUpon>enquiryreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainform.Designer.cs">
+      <DependentUpon>mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports.Designer.cs">
+      <DependentUpon>reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smspidbDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smspidbDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student.Designer.cs">
+      <DependentUpon>student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacher.Designer.cs">
+      <DependentUpon>teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="techerreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="techerreport.Designer.cs">
+      <DependentUpon>techerreport.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="course.resx">
+      <DependentUpon>course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coursereport.resx">
+      <DependentUpon>coursereport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enquirybook.resx">
+      <DependentUpon>enquirybook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enquiryreport.resx">
+      <DependentUpon>enquiryreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainform.resx">
+      <DependentUpon>mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="reports.resx">
+      <DependentUpon>reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student.resx">
+      <DependentUpon>student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacher.resx">
+      <DependentUpon>teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="techerreport.resx">
+      <DependentUpon>techerreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="smspidbDataSet.xsc">
+      <DependentUpon>smspidbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet.xss">
+      <DependentUpon>smspidbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet1.xsc">
+      <DependentUpon>smspidbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet1.xss">
+      <DependentUpon>smspidbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet10.xsc">
+      <DependentUpon>smspidbDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet10.xss">
+      <DependentUpon>smspidbDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet11.xsc">
+      <DependentUpon>smspidbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet11.xss">
+      <DependentUpon>smspidbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet12.xsc">
+      <DependentUpon>smspidbDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet12.xss">
+      <DependentUpon>smspidbDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet13.xsc">
+      <DependentUpon>smspidbDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet13.xss">
+      <DependentUpon>smspidbDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet14.xsc">
+      <DependentUpon>smspidbDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet14.xss">
+      <DependentUpon>smspidbDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet15.xsc">
+      <DependentUpon>smspidbDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet15.xss">
+      <DependentUpon>smspidbDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet16.xsc">
+      <DependentUpon>smspidbDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet16.xss">
+      <DependentUpon>smspidbDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet17.xsc">
+      <DependentUpon>smspidbDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet17.xss">
+      <DependentUpon>smspidbDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet18.xsc">
+      <DependentUpon>smspidbDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet18.xss">
+      <DependentUpon>smspidbDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet19.xsc">
+      <DependentUpon>smspidbDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet19.xss">
+      <DependentUpon>smspidbDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet2.xsc">
+      <DependentUpon>smspidbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet2.xss">
+      <DependentUpon>smspidbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet20.xsc">
+      <DependentUpon>smspidbDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet20.xss">
+      <DependentUpon>smspidbDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet21.xsc">
+      <DependentUpon>smspidbDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet21.xss">
+      <DependentUpon>smspidbDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet22.xsc">
+      <DependentUpon>smspidbDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet22.xss">
+      <DependentUpon>smspidbDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet23.xsc">
+      <DependentUpon>smspidbDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet23.xss">
+      <DependentUpon>smspidbDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet3.xsc">
+      <DependentUpon>smspidbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet3.xss">
+      <DependentUpon>smspidbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet4.xsc">
+      <DependentUpon>smspidbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet4.xss">
+      <DependentUpon>smspidbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet5.xsc">
+      <DependentUpon>smspidbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet5.xss">
+      <DependentUpon>smspidbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet6.xsc">
+      <DependentUpon>smspidbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet6.xss">
+      <DependentUpon>smspidbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet7.xsc">
+      <DependentUpon>smspidbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet7.xss">
+      <DependentUpon>smspidbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet8.xsc">
+      <DependentUpon>smspidbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet8.xss">
+      <DependentUpon>smspidbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet9.xsc">
+      <DependentUpon>smspidbDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="smspidbDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smspidbDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smspidbDataSet9.xss">
+      <DependentUpon>smspidbDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="smspidb.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="smspidb_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>smspidb.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
